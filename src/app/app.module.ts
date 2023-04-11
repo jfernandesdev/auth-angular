@@ -9,10 +9,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 
 import { AppComponent } from './app.component';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
+import { UserListingComponent } from './components/user-listing/user-listing.component';
+import { UpdatePopupComponent } from './components/update-popup/update-popup.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegisterComponent,
+    LoginComponent,
+    HomeComponent,
+    UserListingComponent,
+    UpdatePopupComponent
   ],
   imports: [
     BrowserModule,
