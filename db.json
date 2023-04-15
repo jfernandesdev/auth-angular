@@ -1,5 +1,13 @@
 {
   "user": [
-
+    {
+      "id": "jfernandesdev",
+      "name": "Jeferson Fernandes",
+      "password": "123456",
+      "email": "jfernandes.dev@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true
+    }
   ]
 }

@@ -13,7 +13,7 @@ export class AuthService {
     return this.http.get(this.apiUrl);
   }
 
-  getByCode(code:string) {
+  getByCode(code:any) {
     return this.http.get(this.apiUrl + '/' + code);
   }
 
@@ -21,7 +21,21 @@ export class AuthService {
     return this.http.post(this.apiUrl, inputData);
   }
 
+  proceedLogin(inputData:any) {
+    return;
+  }
+
   updateUser(code: any, inputData: any) {
     return this.http.put(this.apiUrl+'/'+code, inputData);
   }
+
+  isLoggedIn() {
+    return sessionStorage.getItem('@auth:username') != null;
+  }
+
+  getUserRole() {
+    return sessionStorage.getItem('@auth:userRole') != null ? sessionStorage.getItem('@auth:userRole')?.toString() : '';
+  }
+
+
 }
