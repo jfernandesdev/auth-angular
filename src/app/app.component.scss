@@ -2,3 +2,26 @@
   width: 100%;
   display: block;
 }
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #FFF;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  height: 5rem;
+  padding: 0 2rem;
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+  }
+}

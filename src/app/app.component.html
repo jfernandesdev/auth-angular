@@ -1,3 +1,18 @@
 <main class="container">
+  <header class="navBar" *ngIf="isMenuRequired">
+    <div>
+      <img
+        width="60"
+        alt="Angular Logo"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/640px-Angular_full_color_logo.svg.png"
+      />
+
+      <a routerLink="">Home</a>
+      <a routerLink="/user">User</a>
+    </div>
+
+    <a routerLink="/login">Logout</a>
+  </header>
+
   <router-outlet></router-outlet>
 </main>
