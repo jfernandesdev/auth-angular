@@ -17,6 +17,10 @@ export class AuthService {
     return this.http.get(this.apiUrl + '/' + code);
   }
 
+  getAllRole() {
+    return this.http.get('http://localhost:3000/role');
+  }
+
   proceedRegister(inputData: any) {
     return this.http.post(this.apiUrl, inputData);
   }

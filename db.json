@@ -15,44 +15,63 @@
       "password": "123456",
       "email": "fulano@teste.com",
       "gender": "male",
-      "role": "user",
-      "isActive": true
+      "role": "quality",
+      "isActive": false
     },
-     {
+    {
       "id": "deltrano",
       "name": "Deltrano de Tal ",
       "password": "123456",
       "email": "deltrano@teste.com",
       "gender": "male",
-      "role": "user",
-      "isActive": true
+      "role": "staff",
+      "isActive": false
     },
-     {
+    {
       "id": "ciclano",
       "name": "Ciclano de Tal ",
       "password": "123456",
       "email": "ciclano@teste.com",
       "gender": "male",
-      "role": "user",
-      "isActive": true
+      "role": "staff",
+      "isActive": false
     },
-     {
+    {
       "id": "zeltrano",
       "name": "Zeltrano de Tal ",
       "password": "123456",
       "email": "zeltrano@teste.com",
       "gender": "male",
-      "role": "user",
-      "isActive": true
+      "role": "staff",
+      "isActive": false
     },
-     {
+    {
       "id": "maria",
       "name": "Maria de Tal ",
       "password": "123456",
       "email": "maria@teste.com",
       "gender": "female",
-      "role": "",
-      "isActive": false
+      "role": "staff",
+      "isActive": true
+    },
+    {
+      "id": "joaquim",
+      "name": "Joaquim",
+      "password": "123456",
+      "email": "joaquim@teste.com",
+      "gender": "male",
+      "role": "staff",
+      "isActive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "staff",
+      "name": "Staff"
+    },
+    {
+      "code": "quality",
+      "name": "Quality"
     }
   ]
 }

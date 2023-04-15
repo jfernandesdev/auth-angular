@@ -3,6 +3,8 @@ import { AuthService } from 'src/app/services/auth.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
+import { MatDialog } from '@angular/material/dialog';
+import { UpdatePopupComponent } from '../update-popup/update-popup.component';
 
 @Component({
   selector: 'app-user-listing',
@@ -11,7 +13,7 @@ import { MatSort } from '@angular/material/sort';
 })
 
 export class UserListingComponent {
-  constructor(private service: AuthService) {
+  constructor(private service: AuthService, private dialog: MatDialog) {
     this.loadUser()
   }
 
@@ -32,6 +34,21 @@ export class UserListingComponent {
   displayedColumns: string[] = ['id', 'name', 'email', 'role', 'status', 'action'];
 
   updateUser(code: any) {
+    const popup = this.dialog.open(UpdatePopupComponent, {
+      enterAnimationDuration: '100ms',
+      exitAnimationDuration: '500ms',
+      width: '50%',
+      data: {
+        userCode: code
+      }
+    });
 
+    popup.afterClosed().subscribe(res => {
+      this.loadUser();
+    })
+  }
+
+  openDialog() {
+    this.loadUser();
   }
 }

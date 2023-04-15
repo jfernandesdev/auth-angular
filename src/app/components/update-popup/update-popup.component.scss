@@ -1,0 +1,15 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  input, select {
+    width: 100%;
+  }
+}
+
+.formButtons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

@@ -8,11 +8,13 @@
       />
 
       <a routerLink="">Home</a>
-      <a routerLink="/user">User</a>
+      <a *ngIf="isAdminUser" routerLink="/user">User</a>
     </div>
 
     <a routerLink="/login">Logout</a>
   </header>
 
-  <router-outlet></router-outlet>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
 </main>
